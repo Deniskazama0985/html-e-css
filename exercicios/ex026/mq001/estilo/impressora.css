@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* ESTILO PARA IMPRESSORA */
+
+*{
+    margin: 10;
+    padding: 10;
+}
+
+html{
+    font-family: "Courie New", Courier, monospace;
+    font-size: 3em;
+    line-height: 1.5em;
+}
+body{
+    padding: 50px;
+}
+menu{
+    display: none;
+}
+article{
+    content: "esse artigo foi inpresso através do site www.sitename.com.br";
+}
