@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    background-color: bisque ;
+}
+
+header {
+    background-color: rgb(188, 142, 115);
+
+}
+
+header h1 {
+    padding: 10px;
+    text-align: center;
+    color: rgb(237, 176, 142);
+    background-color: rgba(164, 107, 88, 0.936);
+    width: 160px;
+    margin: auto;
+    box-shadow: 0px 0px 30px rgba(137, 86, 69, 0.936);
+    border-radius: 0px 0px 30px 30px;
+}
+
+#burguer{
+    display: block;
+    color: rgb(64, 45, 34);
+    text-align: center;
+    font-size: 35px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#burguer:hover {
+    color: rgb(109, 70, 70);
+}
+
+menu {
+    display: none;
+}
+menu ul {
+    list-style-type: none;
+}
+menu > ul > li > a{
+    display: block;
+    text-align: center;
+    background-color: rgb(151, 119, 109);
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid rgb(109, 70, 70);
+    transition: 0.3s;
+}
+menu > ul > li > a:hover {
+    font-size: larger;
+    background-color: rgb(130, 89, 77);;
+}
+
+main {
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid rgb(151, 119, 109);
+}
+
+article > h2 {
+    padding-bottom: 20px;
+}
+
+article > p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
+article {
+    padding: 10px;
+}
