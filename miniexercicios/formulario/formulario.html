@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            background-color: rgb(80, 36, 121);
+        }
+        label,h1{
+            color: rgb(172, 37, 172);
+            font-weight: bolder;
+            margin: 20px
+        }
+        input[type="text"], input[type="number"] {
+            width: 200px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid rgb(172, 37, 172);
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 60px;">responda!</h1>
+    <form action="formulario.html">
+        <label for="nickname">nickname:</label>
+        <input type="text" id="inickname" name="nickname" required><br>
+        <label for="level">level:</label>
+        <input type="range" name="level" id="ilevel" min="0" max="100" required> <br>
+        <label for="idade">idade:</label>
+        <input type="number" name="idade" id="iidade" min="0" max="100" required> <br>
+        <label for="amg">amigo</label>
+        <input type="radio" name="amg" id="iimg" value="amigo" required>
+        <label for="iinmg">inimigo</label>
+        <input type="radio" name="amg" id="iinmg" value="inimigo" required>
+
+        <div id="botoes">
+            <input type="submit" value="jogar">
+        </div>
+        
+    </form>
+</body>
+</html>

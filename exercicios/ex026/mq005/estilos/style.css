@@ -59,8 +59,10 @@ menu > ul > li > a{
     transition: 0.3s;
 }
 menu > ul > li > a:hover {
-    font-size: larger;
-    background-color: rgb(130, 89, 77);;
+    font-weight: bolder;
+    background-color: rgb(130, 89, 77);
+    font-variant: small-caps;
+
 }
 
 main {
