@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        div.container {
+            display: flex;
+            background-color: blueviolet;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightcoral;
+            border: 1px black solid;
+            text-align: center;
+            flex-basis: 200px;
+        }
+        #ia {
+            flex: 1 2 200px;
+        }
+        #ib {
+            flex: 1 1 200px;
+        }
+        #ic {
+            flex: 3 1 200px; 
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="ia">A</div>
+        <div class="item" id="ib">B</div>
+        <div class="item" id="ic">C</div>
+    </div>
+</body>
+</html>

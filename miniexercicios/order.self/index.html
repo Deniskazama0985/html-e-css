@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pai {
+            display: flex;
+            background-color: lightgreen;
+            height: 300px;
+            width: 100%;
+            flex-flow: row nowrap;
+            justify-items: center;
+            
+        }
+
+        .filho {
+            background-color: lightcoral;
+            border: 1px solid black;
+            padding: 20px;      
+            /* align-self: center; */
+        }
+        #i1 {
+            order: 4;
+            background-color: lightblue;
+            align-self: flex-end;
+        }
+
+        #i2 {
+            order: 2;
+            background-color: lightslategrey;
+            align-self: center;
+        }
+        #i3 {
+            order: 3;
+            background-color: limegreen;
+            align-self: flex-start;
+        }
+        #i4 {
+            order: 0;
+            background-color: orange;
+            align-self: baseline;
+        }
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="filho" id="i1">google</div>
+        <div class="filho" id="i2">hauwei</div>
+        <div class="filho" id="i3">fiodordostoievisk</div>
+        <div class="filho" id="i4">alphabet.ink</div>
+        <div class="filho" id="i5">MRV</div>
+        <div class="filho" id="i6">rinoplasmastia hiteriogina</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-flow: row nowrap;
+            height: 100%;
+            background-color: lightslategrey;
+            border-radius: 15px;
+            justify-items: center;
+            justify-content: center;
+
+        }
+
+        .item {
+            background-color: rgb(67, 78, 90);
+            border: 1px solid black;
+            align-self: center;
+            flex-basis:50px;
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+        #i1 {
+            order: 2;
+            flex-shrink: 4;
+            flex-grow: 2;
+            background-color: rgb(255, 0, 0);
+        }
+
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="item" id="i1">1</div>
+        <div class="item" id="i2">2</div>
+        <div class="item" id="i3">3</div>
+        <div class="item" id="i4">4</div>
+        <div class="item" id="i5">5</div>
+    </main>
+</body>
+</html>

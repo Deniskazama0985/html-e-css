@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        div.container {
+            display: flex;
+            background-color: blueviolet;
+            height: 300px;
+            width: 100%;
+            flex-flow: row nowrap;
+            justify-items: center;
+        }
+
+        div.item {
+            background-color: lightcoral;
+            border: 1px black solid;
+            flex: auto;
+            padding: 10px;
+            align-self: center;
+        }
+        #i1 {
+            order: 0;
+            align-self: stretch;
+            background-color: rgb(255, 0, 0);
+        }
+        #i2 {
+            order: 5;
+            align-self: end;
+            background-color: rgb(127, 255, 212);
+        }
+        #i3 {
+            order: 12;
+            align-self: start;
+            background-color: blue;
+        }
+        #i4 {
+            order: -3;
+            align-self: end;
+            height: 60px;
+            background-color: purple;
+        }
+        #i5 {
+            order: 3;
+            align-self: center;
+            background-color: yellow;
+            flex-basis: 70px;
+        }
+        #i6 {
+            order: 15;
+            align-self: start;
+            background-color: green;
+            flex-basis: 80px;
+        }
+        #i7 {
+            order: 14;
+            align-self: start;
+            background-color: peru;
+            flex-basis: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+    </div>
+</body>
+</html>
