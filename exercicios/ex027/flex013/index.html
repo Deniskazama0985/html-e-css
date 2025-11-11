@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+</head>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            
+        }
+
+        body{
+            background-color: lightpink;
+        }
+
+        header{
+            /* display: flex;  */
+            width: 100%;
+            background-color: lightcoral;
+            flex-flow: row nowrap;
+        }
+
+        header h1{
+            box-shadow: 1px 1px 4px black;
+        }
+
+        a{
+            background-color: rgb(198, 27, 27);
+            width: 80px;
+            margin-left: 10px;
+            border: 1px solid black;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .a:hover{
+            background-color: rgb(251, 31, 75);
+        }
+        main{
+            background-color: indianred;
+            margin: auto;
+            width: 80%;
+            margin-top: 10px;
+            border-radius: 10px;
+            padding: 20px;
+        }
+    </style>
+<body>
+    <header >
+        <h1>titulo</h1>
+        <nav>
+            <a href="#">one option</a>
+            <a href="#">two option</a>
+            <a href="#">three option</a>
+            <a href="#">four option</a>
+            <a href="#">five option</a>
+            <a href="#">six option</a>
+        </nav>
+    </header>
+    <main>
+        <h1>teste flex box</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident velit ducimus, obcaecati nostrum eius voluptates, omnis accusamus aliquam atque laudantium optio dolorum excepturi a eum harum quae commodi ullam quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur voluptates animi rem dolor quia, dignissimos sint deserunt, sunt magnam voluptas nam, ut ab facilis necessitatibus eaque. Cum laborum quae mollitia.</p>
+    </main>
+</body>
+</html>
